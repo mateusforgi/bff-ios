@@ -1,0 +1,6 @@
+framework module Pods_BeagleSwiftUI {
+  umbrella header "Pods-BeagleSwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

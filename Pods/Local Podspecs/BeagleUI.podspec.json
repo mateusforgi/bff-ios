@@ -1,0 +1,52 @@
+{
+  "name": "BeagleUI",
+  "version": "0.1.0",
+  "summary": "This is the Beagle framework for iOS",
+  "description": "We encourage you to use Beagle from Carthage, since it is the preferred\nway of using it. But if you are willing to just test Beagle, you can use this \npod instead.",
+  "homepage": "https://zup-products.gitbook.io/beagle/",
+  "license": "Apache License 2.0",
+  "authors": "Zup IT",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "4.1",
+  "source": {
+    "git": "git@github.com:ZupIT/beagle.git",
+    "branch": "master"
+  },
+  "default_subspecs": "BeagleUI",
+  "subspecs": [
+    {
+      "name": "BeagleUI",
+      "source_files": "iOS/Sources/BeagleUI/Sources/**/*.swift",
+      "resources": "iOS/**/*.xcdatamodeld",
+      "exclude_files": [
+        "iOS/Sources/BeagleUI/Sources/**/Test/**/*.swift",
+        "iOS/Sources/BeagleUI/Sources/**/Tests/**/*.swift",
+        "iOS/Sources/BeagleUI/Sources/**/*Tests*.swift",
+        "iOS/Sources/BeagleUI/Sources/**/*Test*.swift",
+        "iOS/Sources/BeagleUI/Sources/**/*Tests.swift",
+        "iOS/Sources/BeagleUI/Sources/**/*Test.swift"
+      ],
+      "frameworks": [
+        "Foundation",
+        "CoreData"
+      ],
+      "dependencies": {
+        "YogaKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Preview",
+      "source_files": "iOS/Sources/Preview/Sources/**/*.swift",
+      "dependencies": {
+        "Starscream": [
+
+        ]
+      }
+    }
+  ],
+  "swift_version": "4.1"
+}

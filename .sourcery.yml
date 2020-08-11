@@ -1,0 +1,8 @@
+sources:
+  include:
+    - RootOfYourProject
+    - Pods/BeagleUI/iOS/Sources/BeagleUI/CodeGeneration/SourceryProtocols.swift
+templates:
+  - Pods/BeagleUI/iOS/Sources/BeagleUI/CodeGeneration/Templates
+output:
+  RootOfYourProject/CodeGeneration/Generated
